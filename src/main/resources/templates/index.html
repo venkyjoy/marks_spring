@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student marks</title>
+</head>
+<body>
+<div align = "center">
+    <h1>Student Marks sheet</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>name</th>
+            <th>java</th>
+            <th>spring</th>
+            <th>jdbc</th>
+            <th>totalmarks</th>
+        </tr>
+        </thead>
+        <tr th:each="marks : ${listStudent}" >
+            <td th:text = "${marks.subject1}"></td>
+            <td th:text = "${marks.subject2}"></td>
+            <td th:text = "${marks.subject3}"></td>
+
+        </tr>
+
+
+
+    </table>
+</div>
+</body>
+</html>

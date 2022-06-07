@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>marks</title>
+    <link rel = "stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="form">
+
+    <!-- Frist box   -->
+    <div class="box1">
+        <form method="post" action="/result" th:object="${Student}">
+            <br>Fullname - <input type="text" id="Fullname">
+            <br>java -  <input type="text" id="java">
+            <br>spring - <input type="text" id="spring">
+            <br>html - <input type="text" id="html">
+
+        </form>
+        <br>
+        <button id="result">Result</button>
+        <br>
+    </div>
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

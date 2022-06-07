@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel = "stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="box2">
+    <form method="post" action="/result" th:object="${Student}">>
+
+    <div class="display_result"><h4>Total Marks : </h4><span class="total"></span>
+        <p th.text="$(Student.totalMarks())"></p>
+    </div>
+    <div class="display_result"><h4>Percentage : </h4><span class="percent"></span></div>
+    <div class="display_result"><h4>Grade : </h4><span class="grade"></span></div>
+
+    <h3 class="main-result" style="text-align:center; padding:25px;"></h3>
+    </form>
+
+</div>
+
+</body>
+</html>
